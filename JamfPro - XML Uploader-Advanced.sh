@@ -14,8 +14,8 @@
 # Configuration Arrays - format the array in terms of "api end point, github raw xml url"
 #############################################################
 malwarebytes_array=(
-		"osxconfigurationprofiles,https://raw.githubusercontent.com/distorted-fields/xmltests/main/JamfPro-XML/KernExtProfile-Malwarebytes.xml"
-		"osxconfigurationprofiles,https://raw.githubusercontent.com/distorted-fields/xmltests/main/JamfPro-XML/SystExtProfile-MalwareBytes.xml"
+		"osxconfigurationprofiles,https://raw.githubusercontent.com/Aaron-ElectricAI/JamfPro-XML/main/XML%20Files/Malwarebytes/KernExtProfile-Malwarebytes.xml"
+		"osxconfigurationprofiles,https://raw.githubusercontent.com/Aaron-ElectricAI/JamfPro-XML/main/XML%20Files/Malwarebytes/SystExtProfile-MalwareBytes.xml"
 )
 #############################################################
 # Functions

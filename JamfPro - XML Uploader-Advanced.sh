@@ -16,6 +16,7 @@
 malwarebytes_array=(
 		"osxconfigurationprofiles,https://raw.githubusercontent.com/Aaron-ElectricAI/JamfPro-XML/main/XML%20Files/Malwarebytes/KernExtProfile-Malwarebytes.xml"
 		"osxconfigurationprofiles,https://raw.githubusercontent.com/Aaron-ElectricAI/JamfPro-XML/main/XML%20Files/Malwarebytes/SystExtProfile-MalwareBytes.xml"
+		"osxconfigurationprofiles,https://raw.githubusercontent.com/Aaron-ElectricAI/JamfPro-XML/main/XML%20Files/Malwarebytes/PPPC-Malwarebytes.xml"
 )
 #############################################################
 # Functions
@@ -55,6 +56,7 @@ while true; do
 	echo ""
 	echo "Select software to deploy default configurations?"
 	echo "1 - Malwarebytes"
+	echo ""
 	read -p "Please enter an option number: " option
 
 	case $option in 

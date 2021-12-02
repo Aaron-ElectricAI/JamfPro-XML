@@ -1,0 +1,14 @@
+#!/bin/bash
+
+user=`ls -la /dev/console | cut -d " " -f 4`
+
+# set enabled keyboards (Hebrew)
+sudo -su $user defaults write /Users/$user/Library/Preferences/com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>-18432</integer><key>KeyboardLayout Name</key><string>Hebrew</string></dict>'
+    
+#puts input sources input in menu
+open '/System/Library/CoreServices/Menu Extras/TextInput.menu'
+
+
+killall cfprefsd
+killall SystemUISever
+killall Finder

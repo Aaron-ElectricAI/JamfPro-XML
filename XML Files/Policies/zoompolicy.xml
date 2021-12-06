@@ -52,6 +52,7 @@
     </general>
     <scope>
       <all_computers>true</all_computers>
+      <all_users>true</all_users>
       <computers/>
       <computer_groups/>
       <buildings/>

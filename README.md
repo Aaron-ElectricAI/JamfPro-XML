@@ -7,7 +7,7 @@ Various XML files that can be used for uploading into Jamf
 This script will allow you to upload an XML file to a singular instance. This XML data can be for a profile or policy. 
 
 
-### JamfPro - XML Uploader-Advanced.sh
-This script will allow you to configure a series of XML uploads by configuring a pseudo multi-dimensional array. Each array element needs to be a string containing the API endpoint to be acted upon and the URL of the raw XML data from GitHub. These 2 strings MUST be seperated by a , and contain no spaces. This script will also allow you to act upon a singular instance, or a CSV of many instances. 
+### Electric - AutomatedProvisioning.sh
+This script will allow you to configure a series of XML uploads by configuring a pseudo multi-dimensional array. Each array element needs to be a string containing the API endpoint to be acted upon and the URL of the raw XML data from GitHub. These 2 strings MUST be seperated by a , and contain no spaces. 
 
 * Any included scoping mechanisms (including smart groups with matching IDs) will need to be in place prior to creating policies/profiles via the scripts. The Advanced script can be configured to run those actions first by placing appropriate items first in the array and building dependancies from there. 

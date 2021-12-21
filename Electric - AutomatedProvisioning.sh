@@ -9,8 +9,9 @@
 #
 #
 #############################################################
-apiUser=""
-apiPass=""
+apiUser="aaron.hodgson@electric.ai"
+apiPass=$(echo "MTEwMkFtSDgzIQo=" | base64 --decode)
+github_token="" 
 #############################################################
 # Configuration Arrays - format the array in terms of "api end point, github raw xml url"
 #############################################################
@@ -136,7 +137,7 @@ function callAPI() #takes an array element as paameter
   for install_item in "${configuration_array[@]}"; do
     endpoint=$(echo "$install_item" | cut -d ',' -f1)
     url=$(echo "$install_item" | cut -d ',' -f2)
-		xml=$(curl -sk -H "Authorization: token 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" -H 'Accept: application/vnd.github.v3.raw' $url)
+		xml=$(curl -sk -H "Authorization: token $github_token" -H 'Accept: application/vnd.github.v3.raw' $url)
 		# get next enrollment policy ## and update the XML
 		if [[ "$endpoint" == "policies" ]]
 		then 
@@ -370,6 +371,9 @@ if [[ -z "$apiUser" ]]; then
 fi
 if [[ -z "$apiPass" ]]; then 
 	read -r -s -p "Please enter the password for the account: " apiPass
+fi
+if [[ -z "$github_token" ]]; then 
+	read -r -s -p "Please enter a valid Github access token: " github_token
 fi
 echo ""
 #prompt user and loop until we have a valid option 

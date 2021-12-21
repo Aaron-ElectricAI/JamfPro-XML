@@ -9,8 +9,8 @@
 #
 #
 #############################################################
-apiUser="aaron.hodgson@electric.ai"
-apiPass=$(echo "MTEwMkFtSDgzIQo=" | base64 --decode)
+apiUser=""
+apiPass=""
 github_token="" 
 #############################################################
 # Configuration Arrays - format the array in terms of "api end point, github raw xml url"

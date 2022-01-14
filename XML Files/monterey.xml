@@ -1,0 +1,31 @@
+  <restricted_software>
+    <general>
+      <id>3</id>
+      <name>macOS Monterey (12.0)</name>
+      <process_name>Install macOS Monterey.app</process_name>
+      <match_exact_process_name>true</match_exact_process_name>
+      <send_notification>false</send_notification>
+      <kill_process>true</kill_process>
+      <delete_executable>false</delete_executable>
+      <display_message>macOS Monterey is not currently permitted to be installed on Organizational Devices.&#13;
+If you need to upgrade to Monterey and have approval from your organization please reach out to Electric.</display_message>
+      <site>
+        <id>-1</id>
+        <name>None</name>
+      </site>
+    </general>
+    <scope>
+      <all_computers>false</all_computers>
+      <computers/>
+      <computer_groups/>
+      <buildings/>
+      <departments/>
+      <exclusions>
+        <computers/>
+        <computer_groups/>
+        <buildings/>
+        <departments/>
+        <users/>
+      </exclusions>
+    </scope>
+  </restricted_software>

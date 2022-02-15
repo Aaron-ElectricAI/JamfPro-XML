@@ -1,12 +1,8 @@
 <group>
-    <id>-1</id>
     <name>approved-admins</name>
     <access_level>Full Access</access_level>
     <privilege_set>Custom</privilege_set>
-    <site>
-        <id>-1</id>
-        <name>None</name>
-    </site>
+    <site/>
     <privileges>
         <jss_objects>
         <privilege>Create Advanced Computer Searches</privilege>

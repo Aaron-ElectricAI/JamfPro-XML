@@ -9,8 +9,6 @@
 #
 #
 #############################################################
-apiUser="aaron.hodgson@electric.ai"
-apiPass=$(echo "UGVlUGVlUGFudHMyMDE5IQo=" | base64 --decode) 
 #############################################################
 # Just for fun
 cat << "EOF"

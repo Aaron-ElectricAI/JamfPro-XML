@@ -2,7 +2,7 @@
   <policy>
     <general>
       <name>Find My Mac: Disable Edit</name>
-      <enabled>false</enabled>
+      <enabled>true</enabled>
       <trigger>CHECKIN</trigger>
       <trigger_checkin>true</trigger_checkin>
       <trigger_enrollment_complete>false</trigger_enrollment_complete>

@@ -1,0 +1,32 @@
+#!/bin/sh
+# Disable Find My Mac Panel in System Preferences
+
+# This script will write to the PLIST to turn off the edit ability in this setting.
+
+# Check to see if Find My Mac is already enabled.  If it is, script exits as this cannot be disabled remotely.
+
+fmmState=$(defaults read /Library/Preferences/com.apple.FindMyMac.plist FMMEnabled)
+
+if [[ "$fmmState" == "1" ]];
+then
+    echo "Find My Mac is already enabled by the user.  This cannot be disabled remoely.  Quitting...."
+    exit 0
+else
+    echo "Find My Mac not enabled.  Locking option to enable in System Preferences...."
+    defaults write /Library/Preferences/com.apple.icloud.managed.plist DisableFMMiCloudSetting True
+    # Close System Preferences if it's open
+    PID=$(pgrep -i "system preferences")
+    #
+    if [[ $PID != "" ]];
+        then
+            echo "Closing System Preferences...."
+            kill -9 $PID
+    else
+        echo "System Preferences is not open...."
+    fi
+    
+    finalCheck=$(defaults read /Library/Preferences/com.apple.icloud.managed.plist DisableFMMiCloudSetting)
+    echo "Find My Mac editing disabled = $finalCheck"
+fi
+
+exit 0

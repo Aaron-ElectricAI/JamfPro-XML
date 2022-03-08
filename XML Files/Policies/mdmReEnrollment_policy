@@ -81,10 +81,7 @@
       <reinstall_button_text>Reinstall</reinstall_button_text>
       <self_service_description/>
       <force_users_to_view_description>false</force_users_to_view_description>
-      <self_service_icon>
-        <filename>electric_icon_red.png</filename>
-        <uri>https://steyercontent-jamf.electric.ai:8443//iconservlet/?id=14</uri>
-      </self_service_icon>
+      <self_service_icon/>
       <feature_on_main_page>false</feature_on_main_page>
       <self_service_categories>
         <category>

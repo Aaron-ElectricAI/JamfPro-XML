@@ -88,7 +88,6 @@
       <feature_on_main_page>false</feature_on_main_page>
       <self_service_categories>
         <category>
-          <id>8</id>
           <name>Enrollment</name>
           <display_in>true</display_in>
           <feature_in>false</feature_in>

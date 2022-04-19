@@ -1,0 +1,17 @@
+<account>
+  <name>$email</name>
+  <directory_user>false</directory_user>'
+  <full_name>$fullname</full_name>
+  <email>$email</email>
+  <email_address>$email</email_address>
+  <enabled>Enabled</enabled>
+  <force_password_change>true</force_password_change>
+  <access_level>Group Access</access_level>
+  <privilege_set>Custom</privilege_set>
+  <groups>
+    <group>
+      <name>approved-admins</name>
+    </group>
+  </groups>
+  <password>$password</password>
+</account>

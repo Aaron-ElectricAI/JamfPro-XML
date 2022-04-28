@@ -86,7 +86,7 @@
       <self_service_categories/>
     </self_service>
     <package_configuration>
-	XX
+	<pkgs>
     </package_configuration>
     <scripts>
       <size>0</size>

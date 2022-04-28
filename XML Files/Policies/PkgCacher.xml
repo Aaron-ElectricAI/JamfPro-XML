@@ -86,9 +86,7 @@
       <self_service_categories/>
     </self_service>
     <package_configuration>
-      <packages>
-        <size>0</size>
-      </packages>
+	PKGSHERE
     </package_configuration>
     <scripts>
       <size>0</size>
